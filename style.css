@@ -1,0 +1,256 @@
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  color: #f4f4f4;
+  text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 
+  5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #BA55D3;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #BABAA2;; /* Цвет фона */
+    color: black; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #DEB887;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.centered {
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height:100px;
+    margin: -50px 0 0 -100px;
+}
+  
+   .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+input {
+  border: 2px solid red;
+  border-radius: 4px;
+  width:250px;
+  height:35px;
+}
+input[type=time] {
+  border: 2px solid red;
+  border-radius: 4px;
+  width:250px;
+  height:35px;
+}
+
+
+.submit1 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #7B68EE;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.submit1:hover {background-color: #3e8e41}
+
+.submit1:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display:inline-block;
+    width: 300px;
+
+}
+
+div.gallery:hover {
+    border: 6px solid #FFFFFF;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+div.container4 {
+    height: 10em;
+    position: relative }
+div.container4 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+  }
+
+iframe {
+       width: 500px; /* It should not be 100% */
+       height: 500px:
+       margin-left: auto;   /* Automatic margin from left */
+       margin-right: auto; /* Automatic margin from right */
+      } 
+.ds{
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-family: Monospace;
+}
+
+.but_s1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.but_s1_1 {
+      background-color: #008CBA;
+    color: white;
+}
+
+.modal{
+  padding: 50px;
+  background: #ccc;
+  position: fixed; top: 56%; left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.modal1{
+  padding: 50px;
+  background: #ccc;
+  position: fixed; 
+
+  
+}
+
+
+.foo {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #BABAA2;; /* Цвет фона */
+    color: black; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    height: 4%;
+   }
+
+
+
+
+
